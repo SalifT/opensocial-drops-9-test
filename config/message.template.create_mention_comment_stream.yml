@@ -1,0 +1,36 @@
+uuid: 62c2fc58-5227-42fa-88f6-dd61e1c3a380
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - activity_logger
+third_party_settings:
+  activity_logger:
+    activity_bundle_entities:
+      mentions-mentions: mentions-mentions
+    activity_action: create_entitiy_action
+    activity_context: mention_activity_context
+    activity_destinations:
+      stream_profile: stream_profile
+    activity_create_direct: 1
+    activity_aggregate: 0
+    activity_entity_condition: mention_comment
+    email_subject: ''
+_core:
+  default_config_hash: '-q50WmPaQ0s8pdZH0lovS9NKSZ1WRpolLRVD3vTCMVk'
+template: create_mention_comment_stream
+label: 'Create mention in a comment (stream: profile)'
+description: 'A person mentioned me in a comment (stream: profile)'
+text:
+  -
+    value: |
+      <p><a href="">[message:author:display-name]</a> mentioned<a href=""> [social_mentions:mentioned_user] </a>in a comment</p>
+    format: basic_html
+settings:
+  'token options':
+    clear: false
+    'token replace': true
+  purge_override: false
+  purge_methods: {  }

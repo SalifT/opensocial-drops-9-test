@@ -1,0 +1,28 @@
+uuid: a667fe65-238c-496f-9b34-3c2cd41d8b1c
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_group
+    - system
+  theme:
+    - socialbase
+_core:
+  default_config_hash: 88AkZa3Jb0HyTb-lpje9XYFjb1BIc0E-C1sCnWf2gmM
+id: group_add_block
+theme: socialbase
+region: complementary_top
+weight: -97
+provider: null
+plugin: group_add_block
+settings:
+  id: group_add_block
+  label: 'Group add block'
+  provider: social_group
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '/user/*/groups'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,12 @@
+uuid: 22e367a8-17a2-4e17-a416-fec2932d6939
+langcode: en
+status: true
+dependencies:
+  module:
+    - profile
+_core:
+  default_config_hash: uZskjNgOEUdKQ5z_ZXx1K6A5ofp84f81Ra_ACAD_HqA
+id: profile.name
+label: Name
+targetEntityType: profile
+cache: true
